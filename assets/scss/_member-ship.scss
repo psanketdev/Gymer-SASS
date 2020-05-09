@@ -1,0 +1,104 @@
+.members-ship {
+    background-color: $primary;
+
+    .wrapper {
+        width: 58.48%;
+        margin: 0 auto;
+    }
+}
+
+.daily-activity {
+    padding: 57px 0 10%;
+    @include flex;
+    @include flex-content;
+    align-items: center;
+
+    li {
+        @include flex; 
+        @include flex-content;
+        align-items: center;
+
+        span {
+            color: $white;
+            display: block;
+
+            &:first-child {
+                font-size: 28px;
+                font-weight: $bold;
+            }
+
+            &:last-child {
+                color: $p-color;
+                font-size: $twelve;
+                font-weight: $regular;
+            }
+        }
+
+        figure {vertical-align: middle;}
+
+        .daily_content {
+            padding-left: 20px;
+            vertical-align: top;
+        }
+    }
+}
+
+.step-up {
+    margin-bottom: 16%;
+    @include flex; 
+    @include flex-content;
+    align-items: center;
+
+    &-content {
+        flex-basis: 45%;
+
+        h3 {
+            @include h3;
+        }
+
+        p {
+            @include p;
+        }
+
+        a {
+            padding: 15px 20px;
+            border: 1px solid ;
+            @include border-radius(4px);
+            color: $primary;
+            background-color: $green;
+            font-size: $ten;
+            text-transform: $upper;
+            font-weight: $bold;
+            @include transition(.5s);
+
+            &:hover {
+                background-color: $primary;
+                color: $green;
+             }
+        }      
+    }
+}
+
+.classes {
+    width: 46%;
+    text-align: left;
+
+    h3 {
+        @include h3;
+    }
+
+    p {
+        @include p;
+    }
+}
+
+.cardio-img {
+    ul {
+        width: 100%;
+        display: flex;
+
+        li {
+            width: 25%;
+        }
+    }  
+}

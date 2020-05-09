@@ -1,0 +1,92 @@
+footer {
+    width: 100%;
+    padding: 5% 0 4%;
+    background-color: $secondary;
+
+    .wrapper {
+        width: 58.48%;
+        margin: 0 auto;
+    }
+
+    .about {
+        width: 35%;
+        padding-right: 11%;
+    }
+
+    .links {
+        width: 15%;
+        padding-right: 4%
+    }
+
+    .subscribe {width: 33%;}
+
+    .about, .links, .subscribe {
+        display: inline-block;
+        vertical-align: text-top;
+
+        h5 {
+            padding-bottom: 20px;
+            color: $white;
+            text-transform: $upper;
+            font-weight: $bold;
+            font-size: $twelve;
+            letter-spacing: .5px;
+        }
+
+        p {
+            @include p;
+            padding-bottom: 10px;
+            line-height: 20px;
+        }
+    }
+
+    .footer-nav {
+        
+        li {
+            padding-bottom: 10px;
+            display: block;
+
+            a {
+                color: $green;
+                font-size: $twelve;
+                text-transform: $capital;  
+                @include transition(.5s);
+
+                &:hover { color: #fff;}
+            }
+        }
+    }
+
+    .subscribe {
+        input[type="text"]{
+            padding: 7px 0;
+            outline: none;
+            border: 1px solid $white;
+            background: $secondary;
+
+            &::placeholder {
+                padding-left: 7px;
+                font-size: $twelve;
+            }
+        }
+
+        input[type="button"]{
+            padding: 13px 11px 10px;
+            border: none;
+            background: $green;
+            margin-left: -4px;
+            font-size: 9px;
+            font-weight: $bold;
+            text-transform: $upper;
+        }
+    }
+
+    .copy-rights {
+        padding: 13% 0 8%;
+        text-align: center;
+        font-size: $twelve;
+        color: $p-color;
+
+        a { color: $green;}
+    }
+}

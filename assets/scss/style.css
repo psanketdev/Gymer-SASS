@@ -1,0 +1,557 @@
+/* ==========================================================================
+   1. CSS Reset Code
+   ========================================================================== */
+/* 1.1. Eric Meyers Reset
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p,
+blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img,
+ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody,
+tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+/* Force scrollbar */
+html {
+  overflow-y: scroll;
+}
+
+/* Align radios and text inputs with their label */
+input[type='radio'] {
+  vertical-align: text-bottom;
+}
+
+/* Hand cursor on clickable input elements */
+label,
+input[type='button'],
+input[type='submit'],
+button {
+  cursor: pointer;
+}
+
+strong {
+  font-weight: bold;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  width: 100%;
+  border: 0;
+  vertical-align: middle;
+}
+
+sub,
+sup {
+  vertical-align: baseline;
+  position: relative;
+  font-size: 55%;
+  line-height: 0;
+}
+
+sup {
+  top: -.7em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+/* 1.2. Clear Fix
+   ========================== */
+.cf:before,
+.cf:after {
+  display: table;
+  content: " ";
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*for all*/
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+a {
+  cursor: pointer;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  text-decoration: none;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+}
+
+/*for wrapper*/
+.wrapper {
+  max-width: 1360px;
+  width: 86.70%;
+  margin: 0 auto;
+}
+
+header {
+  width: 100%;
+  padding-top: 20px;
+  position: absolute;
+  z-index: 1;
+  top: unset;
+  right: unset;
+  bottom: unset;
+  left: unset;
+}
+
+header .wrapper {
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav {
+  width: 32%;
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav ul li a {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+header nav ul li a:hover {
+  color: #48d494;
+}
+
+header .contact a {
+  padding: 7px 10px;
+  border: 1px solid #48d494;
+  border-radius: 3px;
+  color: #48d494;
+  font-size: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+header .contact a:hover {
+  background: #48d494;
+  color: #fff;
+}
+
+.banner-image {
+  width: 100%;
+  position: relative;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url("/assets/images/banner.png");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url("/assets/images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner-image h2 {
+  padding: 19% 21% 20%;
+  color: #fff;
+  font-weight: 1000;
+  font-size: 80px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.members-ship {
+  background-color: #000;
+}
+
+.members-ship .wrapper {
+  width: 58.48%;
+  margin: 0 auto;
+}
+
+.daily-activity {
+  padding: 57px 0 10%;
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daily-activity li {
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.daily-activity li span {
+  color: #fff;
+  display: block;
+}
+
+.daily-activity li span:first-child {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.daily-activity li span:last-child {
+  color: #888;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.daily-activity li figure {
+  vertical-align: middle;
+}
+
+.daily-activity li .daily_content {
+  padding-left: 20px;
+  vertical-align: top;
+}
+
+.step-up {
+  margin-bottom: 16%;
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.step-up-content {
+  -ms-flex-preferred-size: 45%;
+      flex-basis: 45%;
+}
+
+.step-up-content h3 {
+  padding-bottom: 35px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  color: #48d494;
+}
+
+.step-up-content p {
+  padding-bottom: 35px;
+  color: #888;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.step-up-content a {
+  padding: 15px 20px;
+  border: 1px solid;
+  border-radius: 4px;
+  color: #000;
+  background-color: #48d494;
+  font-size: 10px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+.step-up-content a:hover {
+  background-color: #000;
+  color: #48d494;
+}
+
+.classes {
+  width: 46%;
+  text-align: left;
+}
+
+.classes h3 {
+  padding-bottom: 35px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  color: #48d494;
+}
+
+.classes p {
+  padding-bottom: 35px;
+  color: #888;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.cardio-img ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cardio-img ul li {
+  width: 25%;
+}
+
+.activities {
+  padding-top: 9%;
+  background-color: #000;
+}
+
+.activities .wrapper {
+  width: 58.48%;
+  margin: 0 auto;
+}
+
+.activities h3 {
+  padding-bottom: 35px;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 30px;
+  color: #48d494;
+}
+
+.activities h3 + p {
+  width: 45%;
+  padding-bottom: 35px;
+  color: #888;
+  font-size: 12px;
+  line-height: 25px;
+}
+
+.activities .trainer {
+  padding-bottom: 14%;
+  display: -webkit-box;
+  display: -moz-flexbox;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.activities .trainer li {
+  width: 29%;
+}
+
+.activities .trainer li .trainer_content {
+  padding-top: 25px;
+  text-align: left;
+}
+
+.activities .trainer li .trainer_content h4 {
+  padding-bottom: 5px;
+  color: #fff;
+  font-size: 19px;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+}
+
+.activities .trainer li .trainer_content span {
+  padding-bottom: 20px;
+  display: block;
+  color: #888;
+  font-size: 10px;
+  text-transform: capitalize;
+  letter-spacing: .5px;
+}
+
+.activities .trainer li .trainer_content p {
+  padding-bottom: 35px;
+  color: #888;
+  font-size: 12px;
+  line-height: 25px;
+  line-height: 20px;
+}
+
+.activities .trainer li:nth-child(2) {
+  padding-top: 8%;
+}
+
+.activities .services {
+  padding-bottom: 4%;
+}
+
+footer {
+  width: 100%;
+  padding: 5% 0 4%;
+  background-color: #121212;
+}
+
+footer .wrapper {
+  width: 58.48%;
+  margin: 0 auto;
+}
+
+footer .about {
+  width: 35%;
+  padding-right: 11%;
+}
+
+footer .links {
+  width: 15%;
+  padding-right: 4%;
+}
+
+footer .subscribe {
+  width: 33%;
+}
+
+footer .about, footer .links, footer .subscribe {
+  display: inline-block;
+  vertical-align: text-top;
+}
+
+footer .about h5, footer .links h5, footer .subscribe h5 {
+  padding-bottom: 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 12px;
+  letter-spacing: .5px;
+}
+
+footer .about p, footer .links p, footer .subscribe p {
+  padding-bottom: 35px;
+  color: #888;
+  font-size: 12px;
+  line-height: 25px;
+  padding-bottom: 10px;
+  line-height: 20px;
+}
+
+footer .footer-nav li {
+  padding-bottom: 10px;
+  display: block;
+}
+
+footer .footer-nav li a {
+  color: #48d494;
+  font-size: 12px;
+  text-transform: capitalize;
+  -webkit-transition: all 0.5s linear;
+  transition: all 0.5s linear;
+}
+
+footer .footer-nav li a:hover {
+  color: #fff;
+}
+
+footer .subscribe input[type="text"] {
+  padding: 7px 0;
+  outline: none;
+  border: 1px solid #fff;
+  background: #121212;
+}
+
+footer .subscribe input[type="text"]::-webkit-input-placeholder {
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+footer .subscribe input[type="text"]:-ms-input-placeholder {
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+footer .subscribe input[type="text"]::-ms-input-placeholder {
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+footer .subscribe input[type="text"]::placeholder {
+  padding-left: 7px;
+  font-size: 12px;
+}
+
+footer .subscribe input[type="button"] {
+  padding: 13px 11px 10px;
+  border: none;
+  background: #48d494;
+  margin-left: -4px;
+  font-size: 9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+footer .copy-rights {
+  padding: 13% 0 8%;
+  text-align: center;
+  font-size: 12px;
+  color: #888;
+}
+
+footer .copy-rights a {
+  color: #48d494;
+}
+/*# sourceMappingURL=style.css.map */

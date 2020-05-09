@@ -1,0 +1,59 @@
+.activities {
+    padding-top: 9%;
+    background-color: $primary;
+
+    .wrapper {
+        width: 58.48%;
+        margin: 0 auto;
+    }
+
+    h3 {
+        @include h3;
+
+       & + p {
+            width: 45%;
+            @include p;
+        }
+    }
+
+
+.trainer {
+        padding-bottom: 14%;
+        @include flex;
+        @include flex-content;
+        align-items: center;
+
+        li { width: 29%;
+
+        .trainer_content {
+            padding-top: 25px;
+            text-align: left;
+
+            h4 {
+                padding-bottom: 5px;
+                color: $white;
+                font-size: $nineteen;
+                text-transform: $capital;
+                letter-spacing: .5px;
+            }
+
+            span {
+                padding-bottom: 20px;
+                display: block;
+                color: $p-color;
+                font-size: $ten;
+                text-transform: $capital;
+                letter-spacing: .5px;
+            }
+
+            p { 
+                @include p;
+                line-height: 20px;
+            }
+            }
+            &:nth-child(2) {padding-top: 8%;}
+        }
+    }
+
+    .services { padding-bottom: 4%;}
+}

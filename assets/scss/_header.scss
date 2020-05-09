@@ -1,0 +1,51 @@
+header {
+    width: 100%;
+    padding-top: 20px;
+    @include position(absolute, 1, unset, unset, unset, unset);
+
+    .wrapper {
+        @include flex;
+        @include flex-content;
+        align-items: center;
+    }
+
+    nav {
+        width: 32%;
+        @include flex;
+
+        ul {
+            width: 100%;
+            @include flex;
+            @include flex-content;
+            align-items: center;
+
+          li a {
+                font-size: $twelve;
+                font-weight: $regular;
+                color: $white;
+                text-transform: $capital;
+                letter-spacing: .5px;
+                @include transition(.5s);
+
+                &:hover { color: $green;}
+            }
+        }
+    }
+    .contact a{
+        padding: 7px 10px;
+        border: 1px solid $green;
+        @include border-radius(3px);
+        color: $green;
+        font-size: $ten;
+        font-weight: $regular;
+        text-transform: $upper;
+        letter-spacing: .5px;
+        @include transition(.5s);
+
+        &:hover {
+            background: $green;
+            color: $white;
+         }
+    }
+}
+

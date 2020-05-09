@@ -1,0 +1,16 @@
+.banner-image {
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(to right, rgba(0,0,0,.7),rgba(0,0,0,.4)), url('/assets/images/banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    h2 {
+        padding: 19% 21% 20%;
+        color: $white;
+        font-weight: 1000;
+        font-size: 80px;
+        text-align: center;
+        text-transform: $capital;
+    }
+}
